@@ -1,0 +1,16 @@
+#!/usr/bin/make -f
+
+#export DH_VERBOSE=1
+
+export PYBUILD_NAME = enjarify
+
+%:
+	dh $@ --with python3 --buildsystem=pybuild
+
+override_dh_install:
+	dh_install
+	install -D enjarify.sh debian/enjarify/usr/bin/enjarify
+
+override_dh_auto_test:
+	LC_ALL=C.UTF-8 python3 -m enjarify.runtests
+	rm out.jar

@@ -1,0 +1,23 @@
+Source: enjarify
+Section: devel
+Priority: extra
+Maintainer: Android tools Maintainer <android-tools-devel@lists.alioth.debian.org>
+Uploaders: Reiner Herrmann <reiner@reiner-h.de>
+Build-Depends: debhelper (>= 9),
+               dh-python,
+               python3-all,
+               python3-setuptools,
+# java required for running tests
+               default-jre
+Standards-Version: 3.9.6
+Homepage: https://github.com/google/enjarify
+Vcs-Git: https://alioth.debian.org/anonscm/git/android-tools/enjarify.git
+Vcs-Browser: http://anonscm.debian.org/gitweb/?p=android-tools/enjarify.git
+
+Package: enjarify
+Architecture: all
+Depends: ${python3:Depends}, ${misc:Depends}
+Description: translate Dalvik bytecode to equivalent Java bytecode
+ Enjarify is a tool for translating Dalvik bytecode to equivalent Java bytecode.
+ This allows Java analysis tools to analyze Android applications.
+
