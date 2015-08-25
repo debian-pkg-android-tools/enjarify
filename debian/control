@@ -18,6 +18,9 @@ Package: enjarify
 Architecture: all
 Depends: ${python3:Depends}, ${misc:Depends}
 Description: translate Dalvik bytecode to equivalent Java bytecode
- Enjarify is a tool for translating Dalvik bytecode to equivalent Java bytecode.
- This allows Java analysis tools to analyze Android applications.
-
+ Android applications are Java programs that run on a customized virtual
+ machine, which is part of the Android operating system, the Dalvik VM.
+ Their bytecode differs from the bytecode of normal Java applications.
+ .
+ Enjarify can translate the Dalvik bytecode back to equivalent Java bytecode,
+ which simplifies the analysis of Android applications.
