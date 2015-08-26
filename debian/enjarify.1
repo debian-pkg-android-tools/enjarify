@@ -1,0 +1,31 @@
+.Dd August 26, 2015
+.Dt ENJARIFY 1 USD
+.Os Linux
+.Sh NAME
+.Nm enjarify
+.Nd translate Dalvik to Java bytecode
+.Sh SYNOPSIS
+.Nm enjarify
+.Op Fl h
+.Op Fl o Ar OUTPUT
+.Op Fl f
+.Op Fl Fl fast
+.Ar inputfile
+.Sh DESCRIPTION
+Android applications (.apk) contain Java classes compiled in bytecode for the Dalvik VM, usually inside the file classes.dex.
+To allow analyzing those files, they have to be translated back to normal Java bytecode.
+.Sh OPTIONS
+.Bl -tag -width 3n
+.It Fl h, Fl Fl help
+Display brief usage information.
+.It Fl o, Fl Fl output Ar OUTPUT
+The output file (.jar). Default: [input\-filename]\-enjarify.jar
+.It Fl f, Fl Fl force
+Force overwriting the specified output file if it already exists.
+.It Fl Fl fast
+Disable optimizations that produce more readable bytecode, which speeds up the conversion.
+.It inputfile
+The input file (.dex or .apk). If a multidex apk is specified, all dex files will be translated into a single .jar file.
+.El
+.Sh NOTES
+Optional metadata like source file attributes, line numbers and annotations are currently not translated.
