@@ -1,4 +1,4 @@
-enjarify (20150810-1) UNRELEASED; urgency=low
+enjarify (20150810-1) unstable; urgency=low
 
   * Initial release (Closes: #796926)
 
