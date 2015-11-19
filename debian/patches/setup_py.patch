@@ -11,7 +11,7 @@ Index: enjarify/setup.py
 +from setuptools import setup, find_packages
 +
 +setup(name='enjarify',
-+      version='20150810',
++      version='20151118',
 +      url='https://github.com/google/enjarify',
 +      packages=find_packages(),
 +      )

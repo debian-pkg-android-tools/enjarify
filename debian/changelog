@@ -1,3 +1,9 @@
+enjarify (20151118-1) UNRELEASED; urgency=low
+
+  * New upstream release.
+
+ -- Reiner Herrmann <reiner@reiner-h.de>  Thu, 19 Nov 2015 18:57:51 +0100
+
 enjarify (20150810-1) unstable; urgency=low
 
   * Initial release (Closes: #796926)
