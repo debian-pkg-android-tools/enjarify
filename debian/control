@@ -7,8 +7,6 @@ Build-Depends: debhelper (>= 9),
                dh-python,
                python3-all,
                python3-setuptools,
-# java required for running tests
-               default-jre
 Standards-Version: 3.9.6
 Homepage: https://github.com/google/enjarify
 Vcs-Git: https://anonscm.debian.org/git/android-tools/enjarify.git
