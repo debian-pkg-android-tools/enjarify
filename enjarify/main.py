@@ -25,8 +25,8 @@ def read(fname, mode='rb'):
 
 def translate(data, opts, classes=None, errors=None):
     dex = parsedex.DexFile(data)
-    classes = {} if classes is None else classes
-    errors = {} if errors is None else errors
+    classes = collections.OrderedDict() if classes is None else classes
+    errors = collections.OrderedDict() if errors is None else errors
 
     for cls in dex.classes:
         unicode_name = decode(cls.name) + '.class'
@@ -49,7 +49,9 @@ def writeToJar(fname, classes):
         for unicode_name, data in classes.items():
             # Don't bother compressing small files
             compress_type = zipfile.ZIP_DEFLATED if len(data) > 10000 else zipfile.ZIP_STORED
-            out.writestr(zipfile.ZipInfo(unicode_name), data, compress_type=compress_type)
+            info = zipfile.ZipInfo(unicode_name)
+            info.external_attr = 0o775 << 16 # set Unix file permissions
+            out.writestr(info, data, compress_type=compress_type)
 
 def main():
     parser = argparse.ArgumentParser(prog='enjarify', description='Translates Dalvik bytecode (.dex or .apk) to Java bytecode (.jar)')
@@ -88,7 +90,7 @@ def main():
 
     opts = options.NONE if args.fast else options.PRETTY
     classes = collections.OrderedDict()
-    errors = {}
+    errors = collections.OrderedDict()
     for data in dexs:
         translate(data, opts=opts, classes=classes, errors=errors)
     writeToJar(outfile, classes)
