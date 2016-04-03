@@ -1,13 +1,15 @@
-enjarify (1:1.0.1-1) UNRELEASED; urgency=medium
+enjarify (1:1.0.2-1) UNRELEASED; urgency=medium
 
   * New upstream release.
     + Bump epoch as upstream is now doing proper releases
-    + Update watch file
     + Tests are no longer included
       - Remove jre from Build-Depends
       - Don't run tests from rules
+  * Update watch file.
+  * Bump Standards-Version to 3.9.8.
+  * Clean egg-info directory.
 
- -- Reiner Herrmann <reiner@reiner-h.de>  Sun, 10 Jan 2016 23:51:40 +0100
+ -- Reiner Herrmann <reiner@reiner-h.de>  Sun, 03 Apr 2016 14:37:51 +0200
 
 enjarify (20151118-1) unstable; urgency=low
 
