@@ -7,7 +7,7 @@ Build-Depends: debhelper (>= 9),
                dh-python,
                python3-all,
                python3-setuptools,
-Standards-Version: 3.9.6
+Standards-Version: 3.9.8
 Homepage: https://github.com/google/enjarify
 Vcs-Git: https://anonscm.debian.org/git/android-tools/enjarify.git
 Vcs-Browser: https://anonscm.debian.org/cgit/android-tools/enjarify.git
