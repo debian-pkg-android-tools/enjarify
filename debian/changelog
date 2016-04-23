@@ -2,7 +2,7 @@ enjarify (1:1.0.2-1) UNRELEASED; urgency=medium
 
   * New upstream release.
     + Bump epoch as upstream is now doing proper releases
-    + Tests are no longer included
+    + Tests are no longer included (Closes: #822308)
       - Remove jre from Build-Depends
       - Don't run tests from rules
   * Update watch file.
