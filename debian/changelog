@@ -1,3 +1,9 @@
+enjarify (1:1.0.2-1~bpo8+1) jessie-backports; urgency=low
+
+  * Rebuild for jessie-backports.
+
+ -- Reiner Herrmann <reiner@reiner-h.de>  Mon, 22 Aug 2016 19:38:32 +0200
+
 enjarify (1:1.0.2-1) unstable; urgency=medium
 
   * New upstream release.
