@@ -14,10 +14,10 @@
 
 import collections, operator
 
-from . import arraytypes as arrays
-from . import scalartypes as scalars
-from . import mathops, jvmops
-from .treelist import TreeList
+from ..jvm import arraytypes as arrays
+from ..jvm import scalartypes as scalars
+from ..jvm import mathops, jvmops
+from ..treelist import TreeList
 from .. import flags, dalvik
 
 
@@ -62,11 +62,11 @@ class TypeInfo:
         return new
 
     def assign(self, reg, st, at=arrays.INVALID, taint=False):
-        assert(st is not None)
+        assert st is not None
         return self._copy()._set(reg, st, at, taint)
 
     def assign2(self, reg, st):
-        assert(st is not None)
+        assert st is not None
         at = arrays.INVALID
         return self._copy()._set(reg, st, at)._set(reg+1, scalars.INVALID, at)
 
