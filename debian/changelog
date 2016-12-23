@@ -1,3 +1,9 @@
+enjarify (1:1.0.3-1) unstable; urgency=medium
+
+  * New upstream release
+
+ -- Hans-Christoph Steiner <hans@eds.org>  Fri, 23 Dec 2016 11:21:27 +0100
+
 enjarify (1:1.0.2-1) unstable; urgency=medium
 
   * New upstream release.
