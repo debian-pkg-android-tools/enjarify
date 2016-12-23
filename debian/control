@@ -2,7 +2,8 @@ Source: enjarify
 Section: devel
 Priority: extra
 Maintainer: Android tools Maintainer <android-tools-devel@lists.alioth.debian.org>
-Uploaders: Reiner Herrmann <reiner@reiner-h.de>
+Uploaders: Reiner Herrmann <reiner@reiner-h.de>,
+           Hans-Christoph Steiner <hans@eds.org>
 Build-Depends: debhelper (>= 9),
                dh-python,
                python3-all,
