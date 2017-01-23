@@ -3,12 +3,12 @@ Upstream-Name: enjarify
 Source: https://github.com/google/enjarify
 
 Files: *
-Copyright: 2015-2016 Google Inc.
-           2015-2016 Robert Grosse <grosse@google.com>
+Copyright: 2015-2017 Google Inc.
+           2015-2017 Robert Grosse <grosse@google.com>
 License: Apache-2.0
 
 Files: debian/*
-Copyright: 2015-2016 Reiner Herrmann <reiner@reiner-h.de>
+Copyright: 2015-2017 Reiner Herrmann <reiner@reiner-h.de>
 License: Apache-2.0
 
 License: Apache-2.0
