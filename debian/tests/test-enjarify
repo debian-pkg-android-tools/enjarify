@@ -1,0 +1,12 @@
+#!/bin/sh
+
+set -e
+
+enjarify debian/tests/test.dex -f -o $AUTOPKGTEST_TMP/test.jar
+MD5SUM=$(md5sum /tmp/test.jar | cut -d ' ' -f 1)
+
+if [ "$MD5SUM" != "31eef07923d58c300a6fa3aa29e94e18" ]
+then
+	echo "Unexpected md5sum: $MD5SUM" 1>&2
+	exit 1
+fi
