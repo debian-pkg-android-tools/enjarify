@@ -1,3 +1,9 @@
+enjarify (1:1.0.3-3) unstable; urgency=medium
+
+  * Fix path to output file in autopkgtest.
+
+ -- Reiner Herrmann <reiner@reiner-h.de>  Tue, 24 Jan 2017 18:32:08 +0100
+
 enjarify (1:1.0.3-2) unstable; urgency=medium
 
   * Fix support for big endian systems.
