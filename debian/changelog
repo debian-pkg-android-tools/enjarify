@@ -1,3 +1,9 @@
+enjarify (1:1.0.3-3~bpo8+1) jessie-backports; urgency=low
+
+  * Rebuild for jessie-backports.
+
+ -- Reiner Herrmann <reiner@reiner-h.de>  Thu, 09 Feb 2017 00:00:04 +0100
+
 enjarify (1:1.0.3-3) unstable; urgency=medium
 
   * Fix path to output file in autopkgtest.
