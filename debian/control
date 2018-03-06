@@ -4,7 +4,7 @@ Priority: optional
 Maintainer: Android tools Maintainer <android-tools-devel@lists.alioth.debian.org>
 Uploaders: Reiner Herrmann <reiner@reiner-h.de>,
            Hans-Christoph Steiner <hans@eds.org>
-Build-Depends: debhelper (>= 10),
+Build-Depends: debhelper (>= 11~),
                dh-python,
                python3-all,
                python3-setuptools,
